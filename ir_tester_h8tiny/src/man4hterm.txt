@@ -1,0 +1,57 @@
+準備するソフトウェア
+
+ 1. AKI-H8/3664BP(SDIP)などに付属のCD-ROM
+
+　　　H8側の書き込み制御プログラム「3664.MOT」が必要です。
+　　　下記からダウンロードすることが出来ます。2010/03/16～
+
+　　　http://akizukidenshi.com/catalog/faq/goodsfaq.aspx?goods=K-00007
+　　　http://akizukidenshi.com/download/AKIH83664SDIP.zip
+
+ 2. Hterm (Terminal Program for H8, SuperH Monitor Version 8.4)
+　　　http://japan.renesas.com/
+　　　ホーム / サポート / 半導体セミナー / サンプルプログラム
+　　　H8/300シリーズ
+　　　モニタプログラム専用通信ソフト Hterm
+
+ 3. プログラムファイル(当方サイトからダウンロード)
+
+　　　IR-Tester(赤外線リモコン)：
+　　　http://www.geocities.jp/bokunimowakaru/std-commander.html#ir-tester
+
+　　　ZB-Coordinator(ZigBee)：
+　　　http://www.geocities.jp/bokunimowakaru/std-zigbee.html#ZB-Coordinator
+
+書き込み手順
+
+ 1.　Hterm (Terminal Program for H8, SuperH Monitor Version 8.4)を起動する
+ 2.　Console画面が開く場合は「通信」メニューから「切断」を選択
+ 3.　「ファイル」メニューからプロパティを選択
+ 4.　「通信ポート」の欄からH8と接続しているシリアルポートを選択(※1)
+ 5.　「ビットレート」の欄に19200を設定し、ＯＫを押す。
+ 6.　「フラッシュ」メニューから「ビットレートの設定」を選択
+ 7.　「プログラムの転送速度」を「19200」に変更し、ＯＫを押す。
+ 8.　「フラッシュ」メニューから「ブートモード」を選択
+ 9.　Ｈ８をブートモードに設定してから、「ＯＫ」を選択
+10.　「書き込み制御プログラムの選択」の画面が出てきたら、3664.MOTを選択(※2)
+11.　「開く」を押してしばらく待つ（右下にロード状況が表示される）
+12.　「書き込むロードモジュールの選択」の画面から、プログラムのファイルを選択
+
+※１　USBシリアルアダプタを使用した場合、ケーブル用のドライバで
+　　　シリアルポート(COMポート)を設定します。
+　　　デバイスマネージャの「ポート(COMとLPT)」から、USBシリアル
+　　　アダプタをダブルクリックし、「ポートの設定」タブを選択、
+　　　「ビット／秒」に「19200」を選択し、「詳細設定」を押すと、
+　　　「COMポート番号」の設定があるので、COM1～COM2に設定する。
+　　　設定できない場合は、他のデバイスのCOM1を変更して、使用する
+　　　シリアルポートに割り当てる。
+
+　　　詳細：
+　　　http://www.geocities.jp/bokunimowakaru/download/ir_tester/com_port.txt
+
+※２　AKI-H8/3664BP(SDIP)付属CD-ROMの場合は「/WRITER/3664.MOT」を
+　　　選択します。
+　　　下記からダウンロードすることも出来ます。2010/03/16～
+
+　　　http://akizukidenshi.com/download/AKIH83664SDIP.zip
+
